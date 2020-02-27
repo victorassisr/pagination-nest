@@ -13,7 +13,7 @@ export class AppController {
     let where = '1=1';
 
     if(q.pageSize && q.skip){
-      where = `1=1 LIMIT ${q.skip},${q.pageSize}`;
+      where = `1=1 LIMIT ${q.pageSize} OFFSET ${q.skip}`;
     }
 
     const ps = await createQueryBuilder(Product, 'product')
@@ -29,7 +29,7 @@ export class AppController {
     let where = '1=1';
 
     if(q.pageSize && q.skip){
-      where = `1=1 LIMIT ${q.skip},${q.pageSize}`;
+      where = `1=1 LIMIT ${q.pageSize} OFFSET ${q.skip}`;
     }
 
     const cats = await createQueryBuilder(Category, 'category')
