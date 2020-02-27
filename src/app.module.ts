@@ -12,7 +12,7 @@ import { Product } from './product.entity';
     EasyconfigModule.register({}),
     ConfigModule.forRoot(),
     TypeOrmModule.forRoot({
-    type: 'mysql',
+    type: 'postgres',
     host: process.env.MYSQL_HOST,
     port: Number(process.env.MYSQL_PORT),
     username: process.env.MYSQL_USER,
