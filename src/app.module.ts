@@ -25,6 +25,9 @@ import { Product } from './product.entity';
     synchronize: true,
     logger: 'advanced-console',
     logging: 'all',
+    extra: {
+      ssl: true,
+    }
   }),
 ],
   controllers: [AppController],
