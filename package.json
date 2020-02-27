@@ -27,6 +27,7 @@
     "@nestjs/typeorm": "^6.3.3",
     "mysql": "^2.18.1",
     "nestjs-easyconfig": "^1.8.7",
+    "pg": "^7.18.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.0",
     "rxjs": "^6.5.4",
